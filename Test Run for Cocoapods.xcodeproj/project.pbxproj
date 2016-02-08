@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8032B201C6949A300AF794D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8032B1F1C6949A300AF794D /* DetailViewController.swift */; };
 		B83B1D531C679AF60027EE8E /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83B1D521C679AF60027EE8E /* MovieCell.swift */; };
 		B84023EF1C66CB92005CB77A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84023EE1C66CB92005CB77A /* AppDelegate.swift */; };
 		B84023F41C66CB92005CB77A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84023F21C66CB92005CB77A /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		05B8C11BC90370CCD1A5727D /* Pods-Test Run for Cocoapods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Run for Cocoapods.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test Run for Cocoapods/Pods-Test Run for Cocoapods.release.xcconfig"; sourceTree = "<group>"; };
 		09A4B4AB3ED45CDE0E8B6634 /* Pods-Test Run for Cocoapods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Run for Cocoapods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test Run for Cocoapods/Pods-Test Run for Cocoapods.debug.xcconfig"; sourceTree = "<group>"; };
+		B8032B1F1C6949A300AF794D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B83B1D521C679AF60027EE8E /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		B84023EB1C66CB91005CB77A /* Test Run for Cocoapods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Run for Cocoapods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84023EE1C66CB92005CB77A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				B84024001C66DCA7005CB77A /* MoviesViewController.swift */,
+				B8032B1F1C6949A300AF794D /* DetailViewController.swift */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				B84023EF1C66CB92005CB77A /* AppDelegate.swift in Sources */,
 				B84024011C66DCA7005CB77A /* MoviesViewController.swift in Sources */,
 				B83B1D531C679AF60027EE8E /* MovieCell.swift in Sources */,
+				B8032B201C6949A300AF794D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
