@@ -57,20 +57,29 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if let movies = movies {
-            return movies.count
+        if let moviesList = movies {
+            return moviesList.count
+            
         } else {
             return 0
         }
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell
         
         let movie = movies![indexPath.row]
         let title = movie["title"] as! String
+        let overview = movie["overview"] as! String
+        let posterPath = movie[poster_path"] as! String
         
-        cell.textLabel!.text = title
+        let baseUrl = "http://image.tmdb.org/t/p/w500"
+        
+        let imageUrl = NSURL(string: baseUrl + posterPath)
+        
+        
+        cell.titleLabel.text = title
+        cell.overviewLabel.text = overview
         print ("row \(indexPath.row)")
         return cell
     }
