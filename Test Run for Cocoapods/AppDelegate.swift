@@ -25,10 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nowPlayingViewController.endpoint = "now_playing"
         nowPlayingNavigationController.tabBarItem.title = "Now Playing"
         
+        
         let topRatedNavigationController = storyboard.instantiateViewControllerWithIdentifier("MoviesNavigationStoryboardId") as! UINavigationController
         let topRatedViewController = nowPlayingNavigationController.topViewController as! MoviesViewController
         topRatedViewController.endpoint = "top_rated"
         topRatedNavigationController.tabBarItem.title = "Top Rated"
+       
+        
 
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [nowPlayingNavigationController, topRatedNavigationController]

@@ -120,10 +120,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         if let posterPath = movie["poster_path"] as? String {
         let imageUrl = NSURL(string: baseUrl + posterPath)
         cell.posterView.setImageWithURL(imageUrl!)
+            
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.magentaColor()
+        cell.selectedBackgroundView = backgroundView
         }
         
         print ("row \(indexPath.row)")
         return cell
+
+        
     }
     
     // MARK: - Navigation
